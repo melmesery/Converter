@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="weight-converter">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-4 offset-md-4">
+            <h1 class="text-white fw-bold mb-3 text-center">
+              Weight Converter
+            </h1>
+            <form class="mb-3">
+              <div class="form-group">
+                <input
+                  id="weight"
+                  type="number"
+                  class="form-control form-control-lg"
+                  placeholder="Enter weight In Kg..."
+                />
+              </div>
+            </form>
+
+            <div id="transform">
+              <div class="card bg-danger py-3 mb-3">
+                <p class="pounds mb-0 px-4 fw-bold fs-3">Pounds:</p>
+                <div id="pound" class="px-4 fw-bold fs-3"></div>
+              </div>
+              <div class="card bg-warning py-3 mb-3">
+                <p class="ounces mb-0 px-4 fw-bold fs-3">Pounds:</p>
+                <div id="ounce" class="px-4 fw-bold fs-3"></div>
+              </div>
+              <div class="card bg-success py-3 mb-3">
+                <p class="grams mb-0 px-4 fw-bold fs-3">Pounds:</p>
+                <div id="gram" class="px-4 fw-bold fs-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
